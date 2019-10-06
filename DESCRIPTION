@@ -1,0 +1,16 @@
+Package: shinyLumi
+Title: shinyMethyl plots generation for MethylumiSet data type
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Yuhan",
+           family = "Hu",
+           role = c("aut", "cre"),
+           email = "yh.hu@mail.utoronto.ca")
+Description: Generating plots using shinyMethyl package,which only takes in RGchannelSet data type from **minfi** package as input, for data in **MethylumiSet** class from **Methylumi** package.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: minfi, shinyMethyl, methylumi
+Suggests: 
+    testthat
