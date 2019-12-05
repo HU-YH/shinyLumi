@@ -1,0 +1,12 @@
+citHeader("To cite shinyLumi in publications use:")
+
+citEntry(
+  entry    = "Unpublished",
+  title    = "shinyLumi"
+  author   = "Yuhan Hu"
+  year     = "2019"
+  note     = "Unpublished"
+  textVersion = paste(
+
+  )
+)

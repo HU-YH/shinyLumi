@@ -1,0 +1,45 @@
+---
+title: "shinyLumi"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction_shinyLumi}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(shinyLumi)
+```
+
+# Loading data
+
+```{r,eval=FALSE}
+
+idatPath <- path to your folder contain idat file
+methylumi::methylumIDAT(getBarcodes(path=idatPath), idatPath=idatPath)
+
+```
+
+# Beta values
+
+$\beta=\frac{M}{M+U+100}$ where M and U denote the methylated and unmethylated signals respectively. For each array we have a lot of beta value since there are a number of beads in each array.
+
+
+# Functions
+
+Two export functions in this package. One for drawing density plot of beta values from different methylation arrays, another is corresponding shiny app.
+
+## methylumiDensity()
+
+**mldat** is the MethyLumiSet object contains methylation information
+
+**Sample_sheet** is the sheet about relationship between methylation arrays and sample groups. Not always given.
+
+Rest of the parameters are simply for plotting format options.

@@ -11,6 +11,6 @@ License: CC0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
-Imports: minfi, shinyMethyl, methylumi
+Imports: shiny, methylumi, ggplot2, reshape2, RColorBrewer
 Suggests: 
     testthat
